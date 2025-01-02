@@ -1,0 +1,81 @@
+.container {
+    --Background-color: var(--Blue);
+    --Border-radius: 16px;
+    --Padding: 32px;
+    margin-top: 32px;
+}
+
+.container h1,
+.container h2,
+.container p,
+.container span {
+    color: var(--Pure-White);
+}
+
+.welcome-container {
+    background-color: var(--Background-color);
+    border-radius: var(--Border-radius);
+    padding: var(--Padding);
+}
+
+.welcome-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.welcome-container p {
+    font-size: 0.875rem;
+}
+
+.grid-container {
+    display: grid;
+    gap: 24px;
+    background-color: var(--Background-color);
+    border-radius: var(--Border-radius);
+    padding: var(--Padding);
+}
+
+.bmi-span {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.grid-container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -5%;
+    margin-top: 8px;
+}
+
+.grid-container p {
+    font-size: 0.875rem;
+    line-height: 150%;
+}
+
+.healthy-weight {
+    font-weight: 700;
+}
+
+@media (min-width: 33rem) {
+    .welcome-container {
+        min-height: 8.125rem;
+        border-top-right-radius: 4.0625rem;
+        border-bottom-right-radius: 4.0625rem;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        min-height: 10.375rem;
+        border-top-right-radius: 5.1875rem;
+        border-bottom-right-radius: 5.1875rem;
+    }
+}
+
+@media (min-width: 65rem) {
+    .grid-container h1 {
+        font-size: 4rem;
+    }
+}
